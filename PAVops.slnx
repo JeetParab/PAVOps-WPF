@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/PAVops.Core/PAVops.Core.csproj" />
+    <Project Path="src/PAVops.Desktop/PAVops.Desktop.csproj" />
+    <Project Path="src/PAVops.Infrastructure/PAVops.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/PAVops.Tests/PAVops.Tests.csproj" />
+  </Folder>
+</Solution>
