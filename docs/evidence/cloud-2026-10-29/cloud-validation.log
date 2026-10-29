@@ -1,0 +1,68 @@
+Thu Oct 29 12:52:49 UTC 2026
+Linux c0e486834c26 6.18.55 #1 SMP Wed Oct 14 19:45:18 UTC 2026 x86_64 GNU/Linux
+75348a80789298749c5777e6b569b78214348263
+.NET SDK:
+ Version:           10.0.403
+ Commit:            5a2162bea6
+ Workload version:  10.0.400-manifests.a00bebb6
+ MSBuild version:   18.9.15+5a2162bea
+
+Runtime Environment:
+ OS Name:     debian
+ OS Version:  13
+ OS Platform: Linux
+ RID:         linux-x64
+ Base Path:   /workspace/.pavops-tools/dotnet/sdk/10.0.403/
+
+.NET workloads installed:
+There are no installed workloads to display.
+Configured to use workload sets when installing new manifests.
+No workload sets are installed. Run "dotnet workload restore" to install a workload set.
+
+Host:
+  Version:      10.0.14
+  Architecture: x64
+  Commit:       0427b9abbe
+
+.NET SDKs installed:
+  10.0.403 [/workspace/.pavops-tools/dotnet/sdk]
+
+.NET runtimes installed:
+  Microsoft.AspNetCore.App 10.0.14 [/workspace/.pavops-tools/dotnet/shared/Microsoft.AspNetCore.App]
+  Microsoft.NETCore.App 10.0.14 [/workspace/.pavops-tools/dotnet/shared/Microsoft.NETCore.App]
+
+Other architectures found:
+  None
+
+Environment variables:
+  DOTNET_CLI_HOME                          [/workspace/.pavops-tools/cli-home]
+  DOTNET_CLI_TELEMETRY_OPTOUT              [1]
+  DOTNET_NOLOGO                            [1]
+  DOTNET_ROOT                              [/workspace/.pavops-tools/dotnet]
+
+global.json file:
+  /workspace/PAVOps-WPF/global.json
+
+Learn more:
+  https://aka.ms/dotnet/info
+
+Download .NET:
+  https://aka.ms/dotnet/download
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  PAVops.Core -> /workspace/PAVOps-WPF/src/PAVops.Core/bin/Release/net10.0/PAVops.Core.dll
+  PAVops.Infrastructure -> /workspace/PAVOps-WPF/src/PAVops.Infrastructure/bin/Release/net10.0/PAVops.Infrastructure.dll
+  PAVops.Tests -> /workspace/PAVOps-WPF/tests/PAVops.Tests/bin/Release/net10.0/PAVops.Tests.dll
+  PAVops.Desktop -> /workspace/PAVOps-WPF/src/PAVops.Desktop/bin/Release/net10.0-windows/PAVops.Desktop.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:07.90
+Test run for /workspace/PAVOps-WPF/tests/PAVops.Tests/bin/Release/net10.0/PAVops.Tests.dll (.NETCoreApp,Version=v10.0)
+A total of 1 test files matched the specified pattern.
+Results File: /workspace/PAVOps-WPF/artifacts/tests/_c0e486834c26_2026-10-29_12_53_00_net10.0.trx
+
+Passed!  - Failed:     0, Passed:     1, Skipped:     0, Total:     1, Duration: 881 ms - PAVops.Tests.dll (net10.0)
+PASS: host build and non-UI tests. Windows UI and deployment acceptance remain separate.

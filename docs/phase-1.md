@@ -11,7 +11,7 @@ curl -fsSL https://dot.net/v1/dotnet-install.sh -o /tmp/pavops-dotnet-install.sh
 bash /tmp/pavops-dotnet-install.sh --version 10.0.403 --install-dir "$HOME/.dotnet"
 ```
 
-Make `$HOME/.dotnet` available on PATH in the environment, not only in an ephemeral setup shell. `global.json` requests the .NET 10 stable SDK family with feature-band roll-forward. Setup and validation scripts also resolve this install directory automatically.
+This Codex Cloud environment already retains SDK 10.0.403 under `/workspace/.pavops-tools/dotnet`; use `source /workspace/.pavops-tools/activate.sh` before either script in each new shell. No duplicate SDK installation is required there. For environments using the alternative installation above, make `$HOME/.dotnet` available on PATH, not only in an ephemeral setup shell. `global.json` requests the .NET 10 stable SDK family with feature-band roll-forward. Setup and validation scripts also resolve this install directory automatically.
 
 Run setup from the checked-out review branch:
 
