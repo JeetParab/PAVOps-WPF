@@ -1,0 +1,21 @@
+<Window x:Class="PAVops.Desktop.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="PAVops" Width="1180" Height="760" MinWidth="880" MinHeight="560" FontFamily="Segoe UI" FontSize="14" Background="{StaticResource CanvasBrush}">
+ <Grid>
+  <Grid.ColumnDefinitions><ColumnDefinition Width="232"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions>
+  <Border Background="#18243A" Padding="24">
+   <DockPanel>
+    <StackPanel DockPanel.Dock="Top" Margin="0,12,0,36"><TextBlock Text="PAVops" Foreground="White" FontSize="28" FontWeight="SemiBold"/><TextBlock Text="OPERATIONS WORKSPACE" Foreground="#AEBBD4" FontSize="10" Margin="0,8,0,0"/></StackPanel>
+    <TextBlock DockPanel.Dock="Bottom" Text="Phase 1 · Foundation" Foreground="#AEBBD4" Margin="0,24,0,0"/>
+    <ListBox ItemsSource="{Binding Pages}" SelectedItem="{Binding CurrentPage}" Background="Transparent" Foreground="White" BorderThickness="0"><ListBox.ItemContainerStyle><Style TargetType="ListBoxItem"><Setter Property="Padding" Value="12"/><Setter Property="Margin" Value="0,4"/><Setter Property="HorizontalContentAlignment" Value="Stretch"/></Style></ListBox.ItemContainerStyle></ListBox>
+   </DockPanel>
+  </Border>
+  <Grid Grid.Column="1" Margin="40">
+   <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="*"/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+   <TextBlock Text="YOUR WORKSPACE / FOUNDATION" Foreground="#64748B" FontSize="11"/>
+   <StackPanel Grid.Row="1" Margin="0,24,0,32"><TextBlock Text="{Binding CurrentPage}" FontSize="34" FontWeight="SemiBold"/><TextBlock Text="A fresh foundation for your operations." Foreground="#64748B" Margin="0,10,0,0"/></StackPanel>
+   <Border Grid.Row="2" Background="White" BorderBrush="#E2E7EF" BorderThickness="1" CornerRadius="12" Padding="32">
+    <StackPanel VerticalAlignment="Center"><TextBlock Text="Ready for the next phase" FontSize="24" FontWeight="SemiBold"/><TextBlock Text="The application shell and local database are ready." Margin="0,16,0,0" TextWrapping="Wrap"/><TextBlock Text="Activities, imports and reports will be introduced after foundation acceptance." Foreground="#64748B" Margin="0,10,0,0" TextWrapping="Wrap"/></StackPanel>
+   </Border>
+   <TextBlock Grid.Row="3" Text="WPF · .NET 10 · Local SQLite" Foreground="#64748B" Margin="0,24,0,0"/>
+  </Grid>
+ </Grid>
+</Window>
